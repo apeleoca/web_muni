@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres Deportivos</title>
+    <link rel="stylesheet" href="../css/talleres.css">
+    <link rel="stylesheet" href="../css/header_principal.css">
+</head>
+<header>
+    <img src="../img/logo_municipal.png" alt="Logo Municipalidad" class="logo">
+    <nav class="navegacion">
+        <a href="/index.html">Inicio</a>
+        <a href="#" onclick="cargarTalleres()">Talleres</a>
+        <a href="#">Contacto</a>
+        <button class="btn_login" onclick="mostrarLogin()">Acceder</button>
+    </nav>
+</header>
+
+    <main>
+        <section id="cards-container" class="cards-container"></section>
+         <!-- las imagenes se cambian desde talleres.js -->
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="cont-foot">
+                <h4>Telefono</h4>
+                <p>+569771234565</p>
+            </div>
+            <div class="cont-foot">
+                <h4>Direccion</h4>
+                <p>Av. Concha y Toro 462, Puente Alto, Santiago</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy;Duoc Uc Puente Alto</h2>
+    </footer>
+
+    <script src="../js/talleres.js"></script>
+</body>
+</html>

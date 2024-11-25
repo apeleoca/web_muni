@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/perfil.css">
+    <link rel="stylesheet" href="/css/header_principal.css">
+    <title>Perfil</title>
+</head>
+<body>
+    <section class="header_img">    
+        <header>
+            <img src="/img/logo_municipal.png" alt="Logo Municipalidad" class="logo">
+            <nav class="navegacion">
+                <a href="/index.html">Inicio</a>
+                <a href="/views/talleres.html" onclick="cargarTalleres()">Talleres</a>
+                <a href="#">Contacto</a>
+                <button class="btn_login" onclick="mostrarLogin()">Acceder</button>
+            </nav>
+        </header>
+    </section>
+
+    
+    <div class="carta">
+        <div class="izquierda">
+            <div class="imagen-container">
+                <img src="/img/perfil-del-usuario.png" alt="user" id="user-image">
+                <button class="cambiar-imagen" onclick="document.getElementById('input-cambiar-imagen').click()">✎</button>
+                <input type="file" id="input-cambiar-imagen" accept="image/*" onchange="cambiarImagen(event)" style="display: none;">
+            </div>
+            <h4 id="nombre">Roberto de Miro</h4>
+            <p id="rol">Adulto Mayor</p>
+        </div>
+        <div class="derecha">
+            <div class="info">
+                <h3>Información</h3>
+                <div class="info_data">
+                    <div class="data">
+                        <h4>Email</h4>
+                        <p id="email">R.Demiro@gmail.com</p>
+                    </div>
+                    <div class="data">
+                        <h4>Celular</h4>
+                        <p id="celular">+56977298316</p>
+                    </div>
+                    <div class="data">
+                        <h4>Dirección</h4>
+                        <p id="direccion">Calle Falsa 123, Santiago</p>
+                    </div>
+                    <div class="data">
+                        <h4>RUT</h4>
+                        <p id="rut">12.345.678-9</p>
+                    </div>
+                </div>
+            </div>
+            <button class="editar-perfil" onclick="editarPerfil()">Editar Perfil</button>
+        </div>
+    </div>
+    <script src="/js/perfil.js"></script>
+</body>
+</html>

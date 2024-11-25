@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Talleres Puente Alto</title>
+</head>
+<body>
+    <section class="header_img">    
+        <header>
+            <img src="img/logo_municipal.png" alt="Logo Municipalidad" class="logo">
+            <nav class="navegacion">
+                <a href="#">Inicio</a>
+                <a href="/views/talleres.html" onclick="cargarTalleres()">Talleres</a>
+                <a href="#">Contacto</a>
+                <button class="btn_login" onclick="mostrarLogin()">Acceder</button>
+            </nav>
+            
+        </header>
+    </section>
+    <div class="wave" style="height: 150px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+        </svg>
+    </div>
+
+    <!-- Tarjeta flotante de inicio de sesión -->
+    <div class="login_card" id="loginCard">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm" action="#" method="post" onsubmit="return validarFormulario()">
+            <label for="username">Correo</label>
+            <input type="email" id="email" name="Email" placeholder="Ingrese su Correo">
+            <div class="error-message" id="usernameError"></div>
+            
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Ingrese su contraseña">
+            <div class="error-message" id="passwordError"></div>
+            
+            <button type="submit">Iniciar sesión</button>
+            <a href="#" class="forgot_password">Olvidé mi contraseña</a>
+            <button class="close_btn" type="submit"><a class="btn_registro" href="/views/registrar.html">Registrar</a></button>
+            <button class="close_btn"><a class="btn_registro"  href="index.html">cerrar</a></button>
+        </form>
+    </div>
+
+
+    <!-- Sección de noticias -->
+     <div>
+        <p>NOTICIAS</p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, debitis.
+     </div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <img src="img/CUECA.jpg" alt="">
+            <img src="img/natacion.jpg" alt="Imagen 2">
+            <img src="img/portada.jpg" alt="Imagen 3">
+            <img src="img/clase-de-zumba.jpg" alt="Imagen 4">
+            <img src="img/portada.jpg" alt="Imagen 4">
+        </div>
+    </div>
+
+    <section class="galeria">
+        <div class="contenedor">
+            <h2 class="titulo_galeria">Galería</h2>
+            <div class="imagenes_galeria">
+                <div class="imagen_galeria">
+                    <img src="/img/Yoga.jpg" alt="">
+                </div>
+                <div class="imagen_galeria">
+                    <img src="/img/natacion.jpg" alt="">
+                </div>
+                <div class="imagen_galeria">
+                    <img src="/img/CUECA.jpg" alt="">
+                </div>
+                <div class="imagen_galeria">
+                    <img src="/img/clase-de-zumba.jpg" alt="">
+                </div>
+                <div class="imagen_galeria">
+                    <img src="/img/bordado.jpg" alt="">
+                </div>
+                <div class="imagen_galeria">
+                    <img src="/img/escritura.jpg" alt="">
+                </div>
+                <div class="imagen_galeria">
+                    <img src="/img/tango.jpg" alt="">
+                </div>
+                <div class="imagen_galeria">
+                    <img src="/img/lectura.jpeg" alt="">
+                </div>
+                <div class="imagen_galeria">
+                    <img src="/img/educacion_fisica.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="cont-foot">
+                <h4>Telefono</h4>
+                <p>+569771234565</p>
+            </div>
+            <div class="cont-foot">
+                <h4>Direccion</h4>
+                <p>Av. Concha y Toro 462, Puente Alto, Santiago</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy;Duoc Uc Puente Alto</h2>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/talleres.js"></script>
+
+</body>
+</html>

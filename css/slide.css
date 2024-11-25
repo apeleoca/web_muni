@@ -1,0 +1,18 @@
+/* Estilo para el contenedor principal del slider */
+.slider-container {
+    width: 100%;
+    overflow: hidden; /* Oculta el contenido fuera del contenedor */
+    position: relative;
+}
+
+/* Contenedor de las imágenes que se moverá horizontalmente */
+.slider {
+    display: flex; /* Coloca las imágenes en una fila */
+    transition: transform 0.5s ease; /* Transición más rápida para el movimiento */
+}
+
+/* Estilo para cada imagen */
+.slider img {
+    width: 500px; /* Establece el tamaño de las imágenes a 500px de ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
